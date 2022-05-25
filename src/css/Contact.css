@@ -1,10 +1,13 @@
+body{
+    background: linear-gradient(45deg, #fa8072c9, #8cd6d3);
+}
 .formBox{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 100px;
+    height: 100vh;
 }
 
 .inputBoxes{

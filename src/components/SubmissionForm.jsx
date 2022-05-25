@@ -53,7 +53,7 @@ const SubmissionForm = () => {
             setMessageRed(false);
             setIsLoading(true);
             const response = await fetch(
-                "https://v1.nocodeapi.com/njack/google_sheets/JBrfLbFmSBfCRyeh?tabId=Sheet1" , {
+                "https://v1.nocodeapi.com/kartuz/google_sheets/gNRcsdbgOdKhQSvE?tabId=Sheet1" , {
                 method: 'POST',
                 headers : {
                     'Content-type' : 'application/json'
@@ -83,7 +83,7 @@ const SubmissionForm = () => {
 
     return (
         <div className="formBox">
-
+            <h1 className='text-white text-3xl'>Feedback Form</h1>
             {isSuccess && <div style={{color:'green', display:'flex', alignItems:'center'}}><BiCheckCircle style={{fontSize:'18px'}}/><p style={{margin:'0'}}>Message Sent</p></div>}
             <div className="inputBoxes">
                 <Input placeholder="Name" name="name"  type="text" handleChange={handleChange} newClass={nameRed ? ("name redBox") : ("name")} value={name}/>
